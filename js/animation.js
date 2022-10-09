@@ -1,5 +1,4 @@
-
-const aroow = document.querySelector('.aroow')
+//page About/index.html
 const Url = ['html-i-css.jpg','js for junior.png', 'js part 2.png', 'js_1.png', 'js_2.png', 'js_3.png', 'js_4.png'];
 const arrowRight = document.querySelector('.icon__right')
 const arrowLeft = document.querySelector('.icon__left')
@@ -14,7 +13,7 @@ let count = 0;
 while(i < lenarr){
     let element = document.createElement('div')
     element.className = 'card';
-    element.style.background = `url('images/${Url[i]}') no-repeat center / cover`
+    element.style.background = `url('images/about/${Url[i]}') no-repeat center / cover`
     cards.append(element);
     i++;
 }
@@ -39,3 +38,5 @@ arrowLeft.addEventListener('click', function(){
     cards.classList.add('animation-cards');
     cards.style.transform = `translateX(${-stepSize * count}px)`
 })
+
+

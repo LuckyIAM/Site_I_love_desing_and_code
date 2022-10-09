@@ -3,6 +3,7 @@ body{
     margin: 0;
     font-family: 'Archivo';
     color: #000201;
+    padding-bottom: 50px;
 }
 a{
     text-decoration: none;
@@ -33,17 +34,19 @@ a{
     letter-spacing: -0.8px;
 }
 .about{
-    position: relative;
+    position: absolute;
+    left: 2%;
+    top: 3%;
     display: flex;
     
     
 }
-.about-info{
+.left-content{
     position: absolute;
     left: 20%;
-    top: 65px;
+    top: 11%;
 }
-.about-info h1 {
+h1 {
     margin: 0px;
     font-style: normal;
     font-weight: 900;
@@ -94,7 +97,7 @@ a{
 }
 .works{
     position: relative;
-    top: 614px;
+    top: 500px;
 }
 
 .aroow{
@@ -121,5 +124,68 @@ a{
     transition: 2s all linear ;
 }
 
+.menu_works a{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    color: rgba(0, 2, 1, 0.5);
+}
+.menu_works{
+    display: flex;
+    gap: 40px;
+}
+.wraper-container{
+    position: absolute;
+    top: 200px;
+    left:0;
+    right: 24px;
+    width: 110%;
+    height: 686px;
+    
+}
+.wraper_works{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 
-
+}
+.card_works{
+    width: 328px;
+    height: 246px;
+    cursor: pointer;
+}
+#canvas_line{
+    position: relative;
+    left: 0px;
+    top: -2px;
+}
+.add_scroll{
+    overflow: scroll;
+}
+.icon__sun img{
+    width: 24px;
+    height: 24px;
+}
+.icon__sun {
+    position: absolute;
+    left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+.shadow{
+    border-bottom: 2px solid rgba(0, 2, 1, 0.4);;
+    
+}
