@@ -99,15 +99,15 @@ for(let z = 0; z<itemWorkMenu.length;z++){
 
 }
 
-function pageHeight(){
-    let body = [...document.body.children]
-    console.log(body, body.length);
-    body.forEach(elem =>{
-        height_of_page += elem.clientHeight;
-    })
-    return height_of_page;
-}
+// function pageHeight(){
+//     let body = [...document.body.children]
+//     console.log(body, body.length);
+//     body.forEach(elem =>{
+//         height_of_page += elem.clientHeight;
+//     })
+//     return height_of_page;
+// }
 
-console.log(pageHeight())
+// console.log(pageHeight())
 const footer =document.querySelector('.icon__sun');
-footer.style.top = pageHeight() - 200 + 'px'
+footer.style.left =  '-256px'

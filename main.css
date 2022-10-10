@@ -42,7 +42,7 @@ a{
     
 }
 .left-content{
-    position: absolute;
+    position: relative;
     left: 20%;
     top: 11%;
 }
@@ -97,7 +97,6 @@ h1 {
 }
 .works{
     position: relative;
-    top: 500px;
 }
 
 .aroow{
@@ -142,7 +141,7 @@ h1 {
     top: 200px;
     left:0;
     right: 24px;
-    width: 110%;
+    width: 75%;
     height: 686px;
     
 }
@@ -174,16 +173,16 @@ h1 {
     height: 24px;
 }
 .icon__sun {
-    position: absolute;
+    position: relative;
     left: 24px;
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
+
 }
 .shadow{
     border-bottom: 2px solid rgba(0, 2, 1, 0.4);;
