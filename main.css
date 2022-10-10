@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-family: 'Archivo';
     color: #000201;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 a{
     text-decoration: none;
@@ -44,7 +44,7 @@ a{
 .left-content{
     position: relative;
     left: 20%;
-    top: 11%;
+    top: 89px;
 }
 h1 {
     margin: 0px;
@@ -185,6 +185,13 @@ h1 {
 
 }
 .shadow{
-    border-bottom: 2px solid rgba(0, 2, 1, 0.4);;
-    
+    border-bottom: 2px solid rgba(0, 2, 1, 0.4);
+}
+
+.shadow_light{
+    border-bottom: 2px solid #fffcf5; ;
+}
+
+.works_menu-border{
+    border-bottom: #c2c0bb;
 }

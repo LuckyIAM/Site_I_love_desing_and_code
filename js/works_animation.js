@@ -10,7 +10,7 @@ let height_of_page = 0;
 for(let j = 0; j<10; j++){
     let image = document.createElement('div');
     image.classList.add('card_works');
-    image.style.background = `url('images/works/${j+1}.png') no-repeat center / cover`;
+    image.style.background = `url('../images/works/${j+1}.png') no-repeat center / cover`;
     image.setAttribute('href', url[j]);
     wraper_works.append(image);
 }
@@ -32,30 +32,30 @@ canvas.style.width = wraper_works.clientWidth  +'px';
 canvas.style.height = '100vh';
 
 let context = canvas.getContext('2d');
-function drow(){
-    context.strokeStyle = 'rgba(0, 2, 1, 0.5)'
+function drow(clr){
+    context.strokeStyle = clr;
     context.beginPath();
     context.moveTo(0,0);
     context.lineTo(canvas.getBoundingClientRect().right,0);
     context.stroke();
 }
 
-function animate() {
-    drow()
+function animate(clss) {
+    drow('rgba(0, 2, 1, 0.3)')
     for (let menu = 0;  menu<itemWorkMenu.length; menu++){
        itemWorkMenu[menu].addEventListener('click', function(){
             for (let c = 0; c< itemWorkMenu.length; c++){
-                if (itemWorkMenu[c].classList.contains('shadow')){
-                    itemWorkMenu[c].classList.remove('shadow');
+                if (itemWorkMenu[c].classList.contains(clss)){
+                    itemWorkMenu[c].classList.remove(clss);
                 }   
             }
-            this.classList.add('shadow');        
+            this.classList.add(clss);        
        })
 
     }
 }
 itemWorkMenu[0].classList.add('shadow')
-animate()
+animate('shadow')
 
 function getScroll(){
     if(wraper_works.children.length>=9){
