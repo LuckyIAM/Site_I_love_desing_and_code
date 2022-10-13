@@ -109,5 +109,5 @@ for(let z = 0; z<itemWorkMenu.length;z++){
 // }
 
 // console.log(pageHeight())
-const footer =document.querySelector('.icon__sun');
-footer.style.left =  '-256px'
+// const footer =document.querySelector('.icon__sun');
+// footer.style.left =  '-256px'
