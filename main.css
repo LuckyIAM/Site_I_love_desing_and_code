@@ -241,7 +241,7 @@ h2{
 }
 .contact_form input:focus, 
 .contact_form select:focus,
-.contact_form textarea{
+.contact_form textarea:focus{
     background-color: #f3e9dc; 
     outline: none;
     border: 1px solid #D3902A;
