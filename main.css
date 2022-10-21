@@ -44,14 +44,13 @@ a{
     position: absolute;
     left: 2%;
     top: 3%;
-    display: flex;
-    
-    
+    display: flex;    
 }
 .left-content{
     position: relative;
     left: 20%;
     top: 89px;
+    padding-left: 40px;
 }
 h1 {
     margin: 0px;
@@ -86,7 +85,7 @@ h1 {
 .wraper{
     position: relative;
     top: 30px;
-    left: 20%;
+    left: 0px;
     right: 5%;
     width: 75%;
     height: 358px;
@@ -107,8 +106,8 @@ h1 {
 }
 
 .aroow{
-    position: absolute;
-    right: 5%;  
+    position: relative;
+    left: 70%;  
 }
 .aroow button{
     background: none;
@@ -141,13 +140,11 @@ h1 {
 }
 .menu_works{
     display: flex;
+    width: 75%;
     gap: 40px;
 }
 .wraper-container{
     position: absolute;
-    top: 200px;
-    left:0;
-    right: 24px;
     width: 75%;
     height: 686px;
     
@@ -180,8 +177,9 @@ h1 {
     height: 24px;
 }
 .icon__sun {
-    position: relative;
-    left: 24px;
+    position: fixed;
+    left: 4%;
+    top: 94%;
     display: flex;
     align-items: center;
     font-family: 'Archivo';
@@ -189,7 +187,6 @@ h1 {
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
-
 }
 .shadow{
     border-bottom: 2px solid rgba(0, 2, 1, 0.4);
@@ -225,4 +222,70 @@ h2{
     letter-spacing: -0.25px;
 
     color: rgba(0, 2, 1, 0.6);
+}
+.contact_form{
+    width: 580px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+    grid-auto-columns: 28px;
+    row-gap: 50px;
+    column-gap: 27px;
+}
+.contact_form input, .contact_form select {
+    font-family: 'Courier';
+    height: 55px;
+    background: #F1ECE6;
+    border: none;
+    padding: 16px;
+}
+.contact_form input:focus, .contact_form select:focus{
+    background-color: #f3e9dc; 
+    outline: none;
+    border: 1px solid #D3902A;
+    border-radius: 4px;
+} 
+.contact_form label{
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.25px;
+
+    color: #000201;
+}
+.contact_form div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact_form sup{
+    color: #F73232;
+}
+.form_name{
+    grid-column: 1/2;
+}
+.form_title{
+    grid-column: 2/4;
+}
+.form_mail{
+    grid-column: 1/4;
+}
+.form_message{
+    grid-column: 1/4;
+    height: 240px;
+}
+.form_message input{
+    height: 240px;
+}
+
+.btn{
+    position: relative;
+    top: 170px;
+    width: 164px;
+    height: 55px;
+    background: #000201;
+    color: #F8F4F0;
+
 }

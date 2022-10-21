@@ -1,6 +1,7 @@
 //page works
 const container = document.querySelector('.wraper-container');
 const wraper_works = document.querySelector('.wraper_works');
+const menuWorks = document.querySelector('.menu_works')
 let itemWorkMenu = [...document.querySelector('.menu_works').children];
 let MenuItem = ['All','Product Design','UX Research','Logo','Desk Design', 'Webflow','Social Media','Video Effect','Non Profit'];
 const url = ['https://luckyiam.github.io/stopPropagation_preventDefault_InputDataCard/', 'https://luckyiam.github.io/green-corp-landing/green-corp-landing/', 
@@ -28,15 +29,16 @@ childrenWrapwrWords[8].setAttribute('data-name', MenuItem[6]);
 
 let canvas = document.getElementById('canvas_line');
 
-canvas.style.width = wraper_works.clientWidth  +'px';
-canvas.style.height = '100vh';
+canvas.style.width = menuWorks.getBoundingClientRect().width + 20 +'px';
+canvas.style.height = '30px';
 
 let context = canvas.getContext('2d');
 function drow(clr){
+    context.lineWidth = 20;
     context.strokeStyle = clr;
     context.beginPath();
-    context.moveTo(0,0);
-    context.lineTo(canvas.getBoundingClientRect().right,0);
+    context.moveTo(0,2);
+    context.lineTo(canvas.getBoundingClientRect().right,2);
     context.stroke();
 }
 
@@ -99,15 +101,4 @@ for(let z = 0; z<itemWorkMenu.length;z++){
 
 }
 
-// function pageHeight(){
-//     let body = [...document.body.children]
-//     console.log(body, body.length);
-//     body.forEach(elem =>{
-//         height_of_page += elem.clientHeight;
-//     })
-//     return height_of_page;
-// }
 
-// console.log(pageHeight())
-// const footer =document.querySelector('.icon__sun');
-// footer.style.left =  '-256px'

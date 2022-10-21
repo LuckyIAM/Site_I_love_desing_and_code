@@ -14,15 +14,49 @@
             <a  class="works" href = 'works.html'>Работы</a>
             <a class="resume" href = 'resume.html'>Резюме</a>
             <a class="contact" href = 'contact.html'>Контакты</a>
-        </div>         
-    </section> 
-    <section class="left-content">
-        <!-- add imput form -->
+        </div>   
         <div class="icon__sun">
             <img src="../images/icon/sun_image.png">
             Switch dark 
-        </div> 
+        </div>      
+    </section> 
+    <section class="left-content">
+        <h1>Оставте свои приглашения</h1>
+        <p class="explain">Давай общаться!</p>
+        <div class="wraper_form">
+            <div class="form_container">
+                <form class="contact_form" action="mail.php" enctype="multipart/form-data" method="POST" >
+                     
+                    <div class="form_name">
+                        <label for="name">Имя<sup>*</sup></label>
+                        <input id="name" type="text" placeholder="Введите имя">
+                    </div>
+                    <div class="form_title">
+                        <label for="title">Заголовок<sup>*</sup></label>
+                        <select id="title">
+                            <option checked>Выберите вариант</option>
+                            <option value="invitation">Приглашение</option>
+                            <option value="question">Вопрос</option>
+                        </select>
+                    </div>
+                    <div class="form_mail">
+                        <label for="mail">Электронный адрес<sup>*</sup></label>
+                        <input id="mail" type="email" placeholder="Введите электронную почту">
+                    </div>
+                    <div class="form_message">
+                        <label for="message">Cодержание письма</label>
+                        <textarea id="message" cols="50" rows="20"></textarea>
+                    </div>
+                    <div class="btn_send">
+                        <button type="submit" class="btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
     </section>
     <script src="../js/background_change.js"></script>
+    <script src="../js/contact-animation.js"></script>
 </body>
 </html>
