@@ -59,7 +59,7 @@ h1 {
     font-size: 48px;
     line-height: 56px;
     letter-spacing: -0.8px;
-    
+    color: #000201;
 }
 .more_infommation{
     font-family: 'Mono';
@@ -193,13 +193,13 @@ h1 {
 }
 
 .shadow_light{
-    border-bottom: 2px solid #fffcf5; ;
+    border-bottom: 2px solid #fff; 
 }
 
 .works_menu-border{
     border-bottom: #c2c0bb;
 }
-.containet_tab{
+.container_tab{
     display: grid;
     grid-template-columns: 200px 600px;
 }
@@ -239,7 +239,9 @@ h2{
     border: none;
     padding: 16px;
 }
-.contact_form input:focus, .contact_form select:focus{
+.contact_form input:focus, 
+.contact_form select:focus,
+.contact_form textarea{
     background-color: #f3e9dc; 
     outline: none;
     border: 1px solid #D3902A;
